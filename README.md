@@ -1,6 +1,6 @@
-# 5e-database
+# EH-5e-database
 
-![Build Status](https://github.com/bagelbits/5e-database/workflows/5e%20Database%20CI/badge.svg?branch=main)
+![Build Status](https://github.com/themaskedferret/EH-5e-database/workflows/5e%20Database%20CI/badge.svg?branch=main)
 [![Discord](https://img.shields.io/discord/656547667601653787)](https://discord.gg/TQuYTv7)
 
 Holds the database for the D&D 5th Edition API at http://dnd5eapi.co/
@@ -16,14 +16,14 @@ You should be able to build locally and then run the local Docker image. This ca
 1. If you just need an image and you aren't running an M1:
 
 ```bash
-docker run ghcr.io/5e-bits/5e-database:latest
+docker run ghcr.io/5e-bits/EH-5e-database:latest
 ```
 
 2. If you're running an M1 or you want to test changes that you've made to the Database:
 
 ```bash
-docker build -t 5e-database .
-docker run -i -t 5e-database:latest
+docker build -t EH-5e-database .
+docker run -i -t EH-5e-database:latest
 ```
 
 ### Without Docker
@@ -33,12 +33,12 @@ First you need to make sure you have [MongoDB installed locally.](https://docs.m
 You can load this data locally by running:
 
 ```bash
-MONGODB_URI=mongodb://localhost/5e-database npm run db:refresh
+MONGODB_URI=mongodb://localhost/EH-5e-database npm run db:refresh
 ```
 
 ## API Issues
 
-If you see anything wrong with the API and not the data, please open an issue or PR over [here](https://github.com/bagelbits/5e-srd-api).
+If you see anything wrong with the API and not the data, please open an issue or PR over [here](https://github.com/themaskedferret/EH-5e-srd-api).
 
 ## Contributing
 
@@ -55,7 +55,7 @@ If you see anything wrong with the API and not the data, please open an issue or
 
 ## Code of Conduct
 
-The Code of Conduct can be found [here.](https://github.com/5e-bits/5e-database/wiki/Code-of-Conduct)
+The Code of Conduct can be found [here.](https://github.com/5e-bits/EH-5e-database/wiki/Code-of-Conduct)
 
 ## License
 
@@ -64,6 +64,6 @@ is released using the [Open Gaming License Version 1.0a](https://www.wizards.com
 
 ## Contributors
 
-<a href="https://github.com/5e-bits/5e-database/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=5e-bits/5e-database" />
+<a href="https://github.com/5e-bits/EH-5e-database/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=5e-bits/EH-5e-database" />
 </a>

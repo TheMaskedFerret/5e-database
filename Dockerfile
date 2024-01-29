@@ -17,7 +17,7 @@ RUN apt-get install -y nodejs \
   && apt-get clean \
   && rm -rf /var/apt/lists/*
 
-ENV MONGODB_URI mongodb://localhost:27017/5e-database
+ENV MONGODB_URI mongodb://localhost:27017/EH-5e-database
 
 ## Add code
 WORKDIR /data/db2

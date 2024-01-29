@@ -5,7 +5,7 @@ import { execSync } from "child_process";
 // check the environment variable is set
 const mongodb_uri = process.env.MONGODB_URI;
 if (mongodb_uri === undefined) {
-  const localhost_uri_example = "mongodb://localhost/5e-database";
+  const localhost_uri_example = "mongodb://localhost/EH-5e-database";
   console.error(
     "MONGODB_URI must be defined before running the script:" +
       "\nOn Apple or Linux:" +
@@ -58,7 +58,7 @@ files
     const collection_name = data_name.toLowerCase();
     collections.push({ index: collection_name });
     // example:
-    // mongoimport --uri mongodb://localhost/5e-database
+    // mongoimport --uri mongodb://localhost/EH-5e-database
     //             --collection ability-scores
     //             --file src/5e-SRD-Ability-Scores.json
     //             --jsonArray
